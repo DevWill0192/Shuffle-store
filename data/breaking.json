@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "🚚 FREE SHIPPING ON ORDERS OVER $50",
+    "active": true
+  },
+  {
+    "id": 2,
+    "title": "🔥 NEW COLLECTION JUST DROPPED",
+    "active": true
+  },
+  {
+    "id": 3,
+    "title": "💳 SECURE PAYMENT GUARANTEED",
+    "active": true
+  },
+  {
+    "id": 4,
+    "title": "↩️ 30-DAY RETURN POLICY",
+    "active": true
+  },
+  {
+    "id": 5,
+    "title": "⭐ PREMIUM QUALITY GUARANTEED",
+    "active": true
+  },
+  {
+    "id": 6,
+    "title": "🚚 FREE SHIPPING ON ORDERS OVER $50",
+    "active": true
+  },
+  {
+    "id": 7,
+    "title": "🔥 NEW COLLECTION JUST DROPPED",
+    "active": true
+  },
+  {
+    "id": 8,
+    "title": "💳 SECURE PAYMENT GUARANTEED",
+    "active": true
+  },
+  {
+    "id": 9,
+    "title": "↩️ 30-DAY RETURN POLICY",
+    "active": true
+  },
+  {
+    "id": 10,
+    "title": "⭐ PREMIUM QUALITY GUARANTEED",
+    "active": true
+  }
+]

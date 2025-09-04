@@ -1,0 +1,60 @@
+{% comment %}
+  Top Bar Section - Breaking News Marquee
+{% endcomment %}
+
+<div class="topbar" style="background-color: {{ settings['top-bar'].settings.background_color }};">
+  <div class="topbar__marquee">
+    <div class="topbar__track">
+      {% for break in breaking %}
+        {% if break.active %}
+          <div class="topbar__item">{{ break.title }}</div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .topbar {
+    background-color: #000;
+    color: #fff;
+    height: 40px;
+    overflow: hidden;
+    font: 500 12px/40px system-ui, sans-serif;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .topbar__marquee {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+  }
+
+  .topbar__track {
+    display: inline-flex;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    animation: marquee 30s linear infinite;
+    will-change: transform;
+  }
+
+  .topbar__item {
+    white-space: nowrap;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  .topbar:hover .topbar__track {
+    animation-play-state: paused;
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(100%); }
+    to   { transform: translateX(-100%); }
+  }
+</style>

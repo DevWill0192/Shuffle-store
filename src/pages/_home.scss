@@ -1,0 +1,36 @@
+// Home page styles
+.home {
+  &__hero {
+    background: linear-gradient(135deg, $primary-color, darken($primary-color, 20%));
+    color: $background-color;
+    padding: $spacing-xl 0;
+    text-align: center;
+    
+    h1 {
+      font-size: 3rem;
+      margin-bottom: $spacing-md;
+      
+      @include mobile {
+        font-size: 2rem;
+      }
+    }
+    
+    p {
+      font-size: $font-size-large;
+      margin-bottom: $spacing-lg;
+    }
+  }
+  
+  &__products {
+    padding: $spacing-xl 0;
+    
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: $spacing-lg;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 $spacing-md;
+    }
+  }
+}

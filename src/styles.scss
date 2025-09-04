@@ -1,0 +1,21 @@
+// Main SCSS file
+// Import all other SCSS files here
+
+@import 'variables';
+@import 'mixins';
+
+// Base styles
+body {
+  font-family: $font-family-primary;
+  background-color: #000;
+  background-image: url(https://shuffle.store/images/bg.webp);
+  margin: 0;
+  padding: 0;
+  font-size: $font-size-base;
+  color: $text-color;
+}
+
+// Import other SCSS modules
+@import 'components/buttons';
+@import 'layout/header';
+@import 'pages/home';

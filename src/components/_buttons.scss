@@ -1,0 +1,28 @@
+// Button components
+.btn {
+  @include button-base;
+  
+  &--primary {
+    @include button-primary;
+  }
+  
+  &--secondary {
+    @include button-base;
+    background-color: $secondary-color;
+    color: $background-color;
+    
+    &:hover {
+      background-color: lighten($secondary-color, 10%);
+    }
+  }
+  
+  &--large {
+    padding: $spacing-md $spacing-lg;
+    font-size: $font-size-large;
+  }
+  
+  &--small {
+    padding: $spacing-xs $spacing-sm;
+    font-size: $font-size-small;
+  }
+}
