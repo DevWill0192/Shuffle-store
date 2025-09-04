@@ -1,0 +1,39 @@
+{% comment %}
+  Hero Banner Section for SHUFFLE STORE
+  Features: Background image, CTA button, marquee animation
+{% endcomment %}
+
+<section class="hero-banner" id="hero-banner">
+  <div class="hero-banner__background">
+    <img src="/assets/{{ section.settings.background_image }}" alt="SHUFFLE STORE Hero" class="hero-banner__image">
+    <div class="hero-banner__overlay" style="opacity: {{ section.settings.overlay_opacity | default: 0.3 }}"></div>
+  </div>
+  
+  <div class="hero-banner__content">
+    <div class="hero-banner__cta">
+      <a href="{{ section.settings.button_link | default: '/collections/all' }}" class="hero-banner__button btn btn--primary">
+        {{ section.settings.button_text | default: 'VIEW THE COLLECTION' }}
+      </a>
+    </div>
+  </div>
+  
+  <div class="hero-banner__marquee">
+    <div class="marquee">
+      <div class="marquee__content">
+        <span class="marquee__star">✦</span>
+        <span class="marquee__text">{{ section.settings.marquee_text | default: 'SHUFFLE ESSENTIALS' }}</span>
+        <span class="marquee__star">✦</span>
+        <span class="marquee__text">{{ section.settings.marquee_text | default: 'SHUFFLE ESSENTIALS' }}</span>
+        <span class="marquee__star">✦</span>
+        <span class="marquee__text">{{ section.settings.marquee_text | default: 'SHUFFLE ESSENTIALS' }}</span>
+        <span class="marquee__star">✦</span>
+        <span class="marquee__text">{{ section.settings.marquee_text | default: 'SHUFFLE ESSENTIALS' }}</span>
+        <span class="marquee__star">✦</span>
+        <span class="marquee__text">{{ section.settings.marquee_text | default: 'SHUFFLE ESSENTIALS' }}</span>
+        <span class="marquee__star">✦</span>
+        <span class="marquee__text">{{ section.settings.marquee_text | default: 'SHUFFLE ESSENTIALS' }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+

@@ -1,40 +1,8 @@
-// Header styles
+// Header styles - SHUFFLE STORE
+// Note: Main header styles are implemented directly in header.liquid
+// This file contains additional header-specific styles if needed
+
 .header {
-  background-color: #1e1d1f;
-  padding: $spacing-md 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
-  &__container {
-    max-width: 1200px;
-    margin: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-    @include flex-between;
-  }
-  
-  &__logo {
-    font-size: $font-size-large;
-    font-weight: bold;
-    color: $primary-color;
-  }
-  
-  &__nav {
-    ul {
-      @include flex-center;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      gap: $spacing-lg;
-    }
-    
-    a {
-      text-decoration: none;
-      color: $text-color;
-      font-weight: 500;
-      
-      &:hover {
-        color: $primary-color;
-      }
-    }
-  }
+  // Additional header styles can be added here if needed
+  // Main styles are in the header.liquid file for better organization
 }

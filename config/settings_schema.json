@@ -13,5 +13,193 @@
         "label": "Background Color"
       }
     ]
+  },
+  {
+    "name": "Hero Banner",
+    "settings": [
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "VIEW THE COLLECTION"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link",
+        "default": "/collections/all"
+      },
+      {
+        "type": "text",
+        "id": "marquee_text",
+        "label": "Marquee Text",
+        "default": "SHUFFLE ESSENTIALS 222"
+      },
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+      },
+      {
+        "type": "range",
+        "id": "overlay_opacity",
+        "label": "Overlay Opacity",
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
+        "default": 0.3
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero Banner"
+      }
+    ]
+  },
+  {
+    "name": "Shuffle Essentials",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Section Heading",
+        "default": "SHUFFLE ESSENTIALS"
+      },
+      {
+        "type": "text",
+        "id": "show_all_button",
+        "label": "View All Button Text",
+        "default": "VIEW ALL"
+      },
+      {
+        "type": "range",
+        "id": "products_to_show",
+        "label": "Products to Show Initially",
+        "min": 2,
+        "max": 8,
+        "step": 1,
+        "default": 4
+      },
+      {
+        "type": "range",
+        "id": "products_to_reveal",
+        "label": "Additional Products to Reveal",
+        "min": 2,
+        "max": 10,
+        "step": 1,
+        "default": 6
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#000000"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Shuffle Essentials"
+      }
+    ]
+  },
+  {
+    "name": "Latest Collection",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Section Heading",
+        "default": "LATEST COLLECTION"
+      },
+      {
+        "type": "date",
+        "id": "filter_date",
+        "label": "Filter Date",
+        "default": "2025-01-01"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#000000"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Latest Collection"
+      }
+    ]
+  },
+  {
+    "name": "Footer",
+    "settings": [
+      {
+        "type": "text",
+        "id": "logo_text",
+        "label": "Logo Text",
+        "default": "SHUFFLE STORE"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo_url",
+        "label": "Logo Image"
+      },
+      {
+        "type": "textarea",
+        "id": "copyright",
+        "label": "Copyright Text",
+        "default": "© 2024, Shuffle.store Operated by Studio Plaid. Need help? Email support@shuffle.store"
+      },
+      {
+        "type": "header",
+        "content": "Navigation Links"
+      },
+      {
+        "type": "link_list",
+        "id": "main_links",
+        "label": "Main Navigation Links"
+      },
+      {
+        "type": "link_list",
+        "id": "policy_links",
+        "label": "Policy Links"
+      },
+      {
+        "type": "header",
+        "content": "Newsletter"
+      },
+      {
+        "type": "text",
+        "id": "newsletter_text",
+        "label": "Newsletter Text",
+        "default": "Subscribe and receive drop notifications"
+      },
+      {
+        "type": "text",
+        "id": "newsletter_placeholder",
+        "label": "Newsletter Placeholder",
+        "default": "Enter Email"
+      },
+      {
+        "type": "header",
+        "content": "Social Links"
+      },
+      {
+        "type": "link_list",
+        "id": "social_links",
+        "label": "Social Media Links"
+      },
+      {
+        "type": "text",
+        "id": "payment_text",
+        "label": "Payment Text",
+        "default": "We accept all major cards, PayPal & crypto"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Footer"
+      }
+    ]
   }
 ]

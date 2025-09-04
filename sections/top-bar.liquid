@@ -1,28 +1,29 @@
 {% comment %}
-  Top Bar Section - Breaking News Marquee
+  Top Bar Section - SHUFFLE STORE Marquee
 {% endcomment %}
 
-<div class="topbar" style="background-color: {{ settings['top-bar'].settings.background_color }};">
+<div class="topbar" style="background-color: {{ section.settings.background_color | default: '#000000' }};">
   <div class="topbar__marquee">
-    <div class="topbar__track">
-      {% for break in breaking %}
-        {% if break.active %}
-          <div class="topbar__item">{{ break.title }}</div>
-        {% endif %}
-      {% endfor %}
+    <div class="topbar__track" style="animation-duration: {{ section.settings.animation_speed | default: '30s' }};">
+      <div class="topbar__item">{{ section.settings.marquee_text | default: 'FREE SHIPPING FOR ORDERS OVER $100' }}</div>
+      <div class="topbar__item">{{ section.settings.marquee_text | default: 'FREE SHIPPING FOR ORDERS OVER $100' }}</div>
+      <div class="topbar__item">{{ section.settings.marquee_text | default: 'FREE SHIPPING FOR ORDERS OVER $100' }}</div>
+      <div class="topbar__item">{{ section.settings.marquee_text | default: 'FREE SHIPPING FOR ORDERS OVER $100' }}</div>
+      <div class="topbar__item">{{ section.settings.marquee_text | default: 'FREE SHIPPING FOR ORDERS OVER $100' }}</div>
     </div>
   </div>
 </div>
 
 <style>
   .topbar {
-    background-color: #000;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
     height: 40px;
     overflow: hidden;
-    font: 500 12px/40px system-ui, sans-serif;
+    font: 500 12px/40px 'Arial', sans-serif;
     position: relative;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
   }
 
   .topbar__marquee {
@@ -41,12 +42,14 @@
     padding: 0;
     animation: marquee 30s linear infinite;
     will-change: transform;
+    white-space: nowrap;
   }
 
   .topbar__item {
     white-space: nowrap;
     font-weight: 500;
     letter-spacing: 0.5px;
+    text-transform: uppercase;
   }
 
   .topbar:hover .topbar__track {

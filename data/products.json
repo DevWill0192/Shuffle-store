@@ -1,82 +1,162 @@
 [
   {
     "id": 1,
-    "title": "Shuffle Crewneck Black",
-    "price": 49.99,
-    "tags": ["clothing", "sweater"],
-    "image": "shuffle_crewneck_black.avif",
-    "description": "A stylish black crewneck sweater."
+    "title": "Waifu Body Pillow wil",
+    "price": 888.88,
+    "currency": "USD",
+    "tags": ["home", "decor", "anime"],
+    "image": "waifu_body_pillow.avif",
+    "description": "Premium anime character body pillow with purple hair design.",
+    "category": "essentials",
+    "date_added": "2024-12-01",
+    "in_stock": true,
+    "variants": [
+      { "id": "waifu-1", "name": "Standard", "price": 888.88 }
+    ]
   },
   {
     "id": 2,
-    "title": "Shuffle Hoodie Purple",
-    "price": 59.99,
-    "tags": ["clothing", "hoodie"],
-    "image": "shuffle_crewneck_grey.avif",
-    "description": "A comfortable purple hoodie for everyday wear."
+    "title": "Smokin' Aces Candle ddd",
+    "price": 1000.00,
+    "currency": "USD",
+    "tags": ["home", "candle", "decor"],
+    "image": "smokin_aces_candle.jpg",
+    "description": "Luxury candle with poker chip design and premium fragrance.",
+    "category": "essentials",
+    "date_added": "2024-12-01",
+    "in_stock": true,
+    "variants": [
+      { "id": "candle-1", "name": "Standard", "price": 1000.00 }
+    ]
   },
   {
     "id": 3,
-    "title": "Shuffle Essentials",
-    "price": 29.99,
-    "tags": ["accessories", "daily"],
-    "image": "shuffle_essentials.webp",
-    "description": "Your daily essential accessory set."
+    "title": "Shuffle Hoodie - Purple",
+    "price": 80.00,
+    "currency": "USD",
+    "tags": ["clothing", "hoodie", "purple"],
+    "image": "shuffle_hoodie_purple.avif",
+    "description": "Comfortable purple hoodie with SHUFFLE branding.",
+    "category": "essentials",
+    "date_added": "2024-12-01",
+    "in_stock": true,
+    "variants": [
+      { "id": "hoodie-purple-s", "name": "Small", "price": 80.00 },
+      { "id": "hoodie-purple-m", "name": "Medium", "price": 80.00 },
+      { "id": "hoodie-purple-l", "name": "Large", "price": 80.00 }
+    ]
   },
   {
     "id": 4,
-    "title": "Shuffle Hat Black",
-    "price": 19.99,
-    "tags": ["clothing", "hat"],
+    "title": "Shuffle Hat - Black",
+    "price": 35.00,
+    "currency": "USD",
+    "tags": ["clothing", "hat", "black"],
     "image": "shuffle_hat_black.avif",
-    "description": "A black hat for all seasons."
+    "description": "Classic black cap with SHUFFLE logo.",
+    "category": "essentials",
+    "date_added": "2024-12-01",
+    "in_stock": true,
+    "variants": [
+      { "id": "hat-black-one", "name": "One Size", "price": 35.00 }
+    ]
   },
   {
     "id": 5,
-    "title": "Shuffle Hat Purple",
-    "price": 19.99,
-    "tags": ["clothing", "hat"],
-    "image": "shuffle_hat_purple.avif",
-    "description": "A purple hat to match your hoodie."
+    "title": "Shuffle T-Shirt - Black",
+    "price": 25.00,
+    "currency": "USD",
+    "tags": ["clothing", "t-shirt", "black"],
+    "image": "shuffle_t-shirt_black.avif",
+    "description": "Essential black t-shirt with SHUFFLE branding.",
+    "category": "essentials",
+    "date_added": "2024-12-01",
+    "in_stock": true,
+    "variants": [
+      { "id": "tshirt-black-s", "name": "Small", "price": 25.00 },
+      { "id": "tshirt-black-m", "name": "Medium", "price": 25.00 },
+      { "id": "tshirt-black-l", "name": "Large", "price": 25.00 }
+    ]
   },
   {
     "id": 6,
-    "title": "Shuffle Hoodie Black",
-    "price": 59.99,
-    "tags": ["clothing", "hoodie"],
-    "image": "shuffle_hoodie_black.avif",
-    "description": "A versatile black hoodie for daily use."
+    "title": "Shuffle T-Shirt - White",
+    "price": 25.00,
+    "currency": "USD",
+    "tags": ["clothing", "t-shirt", "white"],
+    "image": "shuffle_t_shirt_white.avif",
+    "description": "Clean white t-shirt with purple SHUFFLE logo.",
+    "category": "essentials",
+    "date_added": "2024-12-01",
+    "in_stock": true,
+    "variants": [
+      { "id": "tshirt-white-s", "name": "Small", "price": 25.00 },
+      { "id": "tshirt-white-m", "name": "Medium", "price": 25.00 },
+      { "id": "tshirt-white-l", "name": "Large", "price": 25.00 }
+    ]
   },
   {
     "id": 7,
-    "title": "Shuffle T-Shirt White",
-    "price": 25.99,
-    "tags": ["clothing", "t-shirt"],
-    "image": "shuffle_t_shirt_white.avif",
-    "description": "A classic white t-shirt for every occasion."
+    "title": "Shuffle Hoodie - Black",
+    "price": 80.00,
+    "currency": "USD",
+    "tags": ["clothing", "hoodie", "black"],
+    "image": "shuffle_hoodie_black.avif",
+    "description": "Versatile black hoodie for daily wear.",
+    "category": "essentials",
+    "date_added": "2024-12-01",
+    "in_stock": true,
+    "variants": [
+      { "id": "hoodie-black-s", "name": "Small", "price": 80.00 },
+      { "id": "hoodie-black-m", "name": "Medium", "price": 80.00 },
+      { "id": "hoodie-black-l", "name": "Large", "price": 80.00 }
+    ]
   },
   {
     "id": 8,
-    "title": "Shuffle T-Shirt Black",
-    "price": 25.99,
-    "tags": ["clothing", "t-shirt"],
-    "image": "shuffle_t_shirt_black.avif",
-    "description": "A stylish black t-shirt for casual wear."
+    "title": "Shuffle Hat - Purple",
+    "price": 35.00,
+    "currency": "USD",
+    "tags": ["clothing", "hat", "purple"],
+    "image": "shuffle_hat_purple.avif",
+    "description": "Purple cap with white SHUFFLE logo.",
+    "category": "essentials",
+    "date_added": "2024-12-01",
+    "in_stock": true,
+    "variants": [
+      { "id": "hat-purple-one", "name": "One Size", "price": 35.00 }
+    ]
   },
   {
     "id": 9,
-    "title": "Ket Club Mug",
-    "price": 15.99,
-    "tags": ["home", "mug"],
+    "title": "KET.CLUB Hoodie - Blue",
+    "price": 120.00,
+    "currency": "USD",
+    "tags": ["clothing", "hoodie", "blue", "collaboration"],
     "image": "ket_club.jpg",
-    "description": "A premium mug for coffee lovers."
+    "description": "Exclusive blue hoodie with KET.CLUB collaboration design.",
+    "category": "latest",
+    "date_added": "2025-01-15",
+    "in_stock": true,
+    "variants": [
+      { "id": "ket-hoodie-s", "name": "Small", "price": 120.00 },
+      { "id": "ket-hoodie-m", "name": "Medium", "price": 120.00 },
+      { "id": "ket-hoodie-l", "name": "Large", "price": 120.00 }
+    ]
   },
   {
     "id": 10,
-    "title": "Waifu Body Pillow",
-    "price": 89.99,
-    "tags": ["home", "decor"],
-    "image": "waifu_body_pillow.avif",
-    "description": "Comfortable body pillow with a unique design."
+    "title": "Shuffle Essentials Bundle",
+    "price": 150.00,
+    "currency": "USD",
+    "tags": ["bundle", "essentials", "value"],
+    "image": "shuffle_essentials.webp",
+    "description": "Complete SHUFFLE essentials collection bundle.",
+    "category": "latest",
+    "date_added": "2025-01-20",
+    "in_stock": true,
+    "variants": [
+      { "id": "bundle-1", "name": "Standard Bundle", "price": 150.00 }
+    ]
   }
 ]

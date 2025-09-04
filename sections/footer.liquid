@@ -1,0 +1,71 @@
+{% comment %}
+  Footer Section for SHUFFLE STORE
+  Features: Logo, navigation links, newsletter signup, social links, payment methods
+{% endcomment %}
+
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <img src="/assets/{{ section.settings.logo_url | default: 'logo.svg' }}" alt="{{ section.settings.logo_text | default: 'SHUFFLE STORE' }}" class="footer__logo-image">
+          <span class="footer__logo-text">{{ section.settings.logo_text | default: 'SHUFFLE STORE' }}</span>
+        </div>
+        <p class="footer__copyright">{{ section.settings.copyright | default: '© 2024, Shuffle.store Operated by Studio Plaid. Need help? Email support@shuffle.store' }}</p>
+      </div>
+      
+      <div class="footer__navigation">
+        <div class="footer__main-links">
+          {% for link in section.settings.main_links %}
+            <a href="{{ link.url }}" class="footer__link footer__link--main">{{ link.label }}</a>
+          {% endfor %}
+        </div>
+        <div class="footer__policy-links">
+          {% for link in section.settings.policy_links %}
+            <a href="{{ link.url }}" class="footer__link footer__link--policy">{{ link.label }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      
+      <div class="footer__newsletter">
+        <h3 class="footer__newsletter-title">{{ section.settings.newsletter_text | default: 'Subscribe and receive drop notifications' }}</h3>
+        <form class="footer__newsletter-form" id="newsletter-form">
+          <div class="footer__newsletter-input-group">
+            <input 
+              type="email" 
+              class="footer__newsletter-input" 
+              placeholder="{{ section.settings.newsletter_placeholder | default: 'Enter Email' }}"
+              required
+            >
+            <button type="submit" class="footer__newsletter-button btn btn--primary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12,5 19,12 12,19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer__bottom">
+      <div class="footer__payment">
+        <p class="footer__payment-text">{{ section.settings.payment_text | default: 'We accept all major cards, PayPal & crypto' }}</p>
+        <div class="footer__payment-icons">
+          <div class="footer__payment-icon" style="background-color: #1A1F71;">V</div>
+          <div class="footer__payment-icon" style="background-color: #EB001B;">M</div>
+          <div class="footer__payment-icon" style="background-color: #0070BA;">P</div>
+          <div class="footer__payment-icon" style="background-color: #F7931A;">₿</div>
+          <div class="footer__payment-icon" style="background-color: #627EEA;">Ξ</div>
+        </div>
+      </div>
+      
+      <div class="footer__social">
+        {% for link in section.settings.social_links %}
+          <a href="{{ link.url }}" class="footer__social-link" target="_blank" rel="noopener">{{ link.label }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</footer>
+

@@ -1,59 +1,85 @@
 {
   "sections": {
-    "featured-products": {
-      "type": "featured-products",
+    "top-bar": {
+      "type": "top-bar",
       "settings": {
-        "heading": "Our Featured Products",
-        "background_color": "#ffffff"
+        "background_color": "#000000",
+        "text_color": "#ffffff",
+        "marquee_text": "FREE SHIPPING FOR ORDERS OVER $100",
+        "animation_speed": "30s"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_text": "SHUFFLE STORE",
+        "logo_url": "logo.svg",
+        "text_pay": "We Accept",
+        "all_products": "All Products",
+        "collections": "Collections",
+        "cart_icon": "cart",
+        "payment_icons": [
+          { "name": "Visa", "color": "#1A1F71" },
+          { "name": "Mastercard", "color": "#EB001B" },
+          { "name": "PayPal", "color": "#0070BA" },
+          { "name": "Bitcoin", "color": "#F7931A" },
+          { "name": "Ethereum", "color": "#627EEA" }
+        ]
       }
     },
     "hero-banner": {
       "type": "hero-banner",
       "settings": {
-        "button_text": "Shop Now",
+        "button_text": "VIEW THE COLLECTION",
         "button_link": "/collections/all",
-        "marquee_text": "Free Shipping on Orders Over $50",
-        "background_image": "hero_banner_img.avif"
+        "marquee_text": "SHUFFLE ESSENTIALS",
+        "background_image": "hero_banner_img.avif",
+        "overlay_opacity": 0.3
+      }
+    },
+    "shuffle-essentials": {
+      "type": "shuffle-essentials",
+      "settings": {
+        "heading": "SHUFFLE ESSENTIALS",
+        "show_all_button": "VIEW ALL",
+        "products_to_show": 4,
+        "products_to_reveal": 6,
+        "background_color": "#000000"
+      }
+    },
+    "latest-collection": {
+      "type": "latest-collection",
+      "settings": {
+        "heading": "LATEST COLLECTION",
+        "filter_date": "2025-01-01",
+        "background_color": "#000000"
       }
     },
     "footer": {
       "type": "footer",
       "settings": {
-        "logo_text": "MyShopify",
-        "links": [
-          { "label": "Home", "url": "/" },
-          { "label": "Cart", "url": "/cart" },
-          { "label": "All Products", "url": "/collections/all" },
-          { "label": "Collections", "url": "/collections" },
-          { "label": "Refund Policy", "url": "/refund-policy" },
-          { "label": "Privacy Policy", "url": "/privacy-policy" },
-          { "label": "Terms of Service", "url": "/terms-of-service" }
-        ]
-      }
-    },
-    "top-bar": {
-      "type": "top-bar",
-      "settings": {
-        "background_color": "#7545fb",
-        "text_color": "#ffffff",
-        "animation_speed": "30s"
-      }
-    },
-    "header":{
-      "type": "header",
-      "settings": {
+        "logo_text": "SHUFFLE STORE",
         "logo_url": "logo.svg",
-        "text_pay": "We Accept",
-        "all_product": "All Prodcucts",
-        "collections": "Colections",
-        "minicart": "url",
-        "images_pay": [
-          { "label": "Bitcoin", "url": "/" },
-          { "label": "Cart", "url": "/cart" },
-          { "label": "All Products", "url": "/collections/all" },
-          { "label": "Collections", "url": "/collections" },
-          { "label": "Refund Policy", "url": "/refund-policy" }
-        ]
+        "copyright": "© 2024, Shuffle.store Operated by Studio Plaid. Need help? Email support@shuffle.store",
+        "main_links": [
+          { "label": "HOME", "url": "/" },
+          { "label": "CART", "url": "/cart" },
+          { "label": "ALL PRODUCTS", "url": "/collections/all" },
+          { "label": "COLLECTIONS", "url": "/collections" }
+        ],
+        "policy_links": [
+          { "label": "REFUND POLICY", "url": "/refund-policy" },
+          { "label": "PRIVACY POLICY", "url": "/privacy-policy" },
+          { "label": "TERMS OF SERVICE", "url": "/terms-of-service" }
+        ],
+        "newsletter_text": "Subscribe and receive drop notifications",
+        "newsletter_placeholder": "Enter Email",
+        "social_links": [
+          { "label": "FACEBOOK", "url": "https://facebook.com" },
+          { "label": "X(TWITTER)", "url": "https://x.com" },
+          { "label": "INSTAGRAM", "url": "https://instagram.com" }
+        ],
+        "payment_text": "We accept all major cards, PayPal & crypto"
       }
     }
   }
